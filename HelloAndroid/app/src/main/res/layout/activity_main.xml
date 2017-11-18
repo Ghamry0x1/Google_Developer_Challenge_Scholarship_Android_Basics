@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ghamry.helloandroid.MainActivity"
+    android:background="#f7f5f6"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/artwork"
+        android:src="@drawable/artwork"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/contactInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/businessName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Udacity"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/users"
+            android:drawablePadding="16dp"
+            android:singleLine="true"
+            android:gravity="start|center_vertical"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="650-555-5555"
+            android:autoLink="phone"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/num"
+            android:drawablePadding="16dp"
+            android:singleLine="true"
+            android:gravity="start|center_vertical"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="https://www.udacity.com"
+            android:autoLink="web"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/web"
+            android:drawablePadding="16dp"
+            android:singleLine="true"
+            android:gravity="start|center_vertical"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2465 Latham St, Mountain View, CA 94043"
+            android:autoLink="map"
+            android:textSize="14sp"
+            android:drawableLeft="@drawable/map"
+            android:drawablePadding="16dp"
+            android:gravity="start|center_vertical"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/logos"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp">
+
+        <ImageView
+            android:src="@drawable/google"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"/>
+
+        <ImageView
+            android:src="@drawable/udacity"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Take Me To The Classroom"
+        android:onClick="btnClicked"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="16dp"/>
+
+</LinearLayout>
