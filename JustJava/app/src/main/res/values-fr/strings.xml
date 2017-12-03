@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">JustJava</string>
+    <string name="name">Nom</string>
+    <string name="toppings">Garnitures</string>
+    <string name="whippedCream">Crème fouettée</string>
+    <string name="chocolate">Chocolat</string>
+    <string name="quantity">Quantité</string>
+    <string name="price">Prix</string>
+    <string name="calculate">Calculer</string>
+    <string name="order">Commande</string>
+    <string name="added">Ajoutée</string>
+    <string name="thankyou">Merci beaucoup!</string>
+    <string name="orderFor">comander pour</string>
+    <string name="total">Total</string>
+</resources>
